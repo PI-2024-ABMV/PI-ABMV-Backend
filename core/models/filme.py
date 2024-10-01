@@ -8,7 +8,7 @@ class Filme(models.Model):
     categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT)
     dataLancamento = models.IntegerField()
     sinopse = models.TextField()
-    trailer = models.URLField()
+    trailer = models.URLField(blank=True, null=True)
     
 
     def __str__(self):
