@@ -56,4 +56,4 @@ admin.site.register(models.TipoAssento)
 admin.site.register(models.Filme)
 admin.site.register(models.Sala)
 admin.site.register(models.Assento)
-
+admin.site.register(models.Sessao)
