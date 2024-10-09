@@ -5,3 +5,4 @@ from .filme import Filme
 from .sala import Sala
 from .assento import Assento
 from .sessao import Sessao
+from .ingresso import Ingresso
