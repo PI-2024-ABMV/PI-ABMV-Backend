@@ -31,6 +31,7 @@ router.register(r"salas", SalaViewSet, basename="salas")
 router.register(r"assentos", AssentoViewSet, basename="Assentos")
 router.register(r"sessoes", SessaoViewSet, basename="sessoes")
 router.register(r"ingressos", IngressoViewSet, basename="ingressos")
+router.register(r"carrinhos", CarrinhoViewSet, basename="carrinhos")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
