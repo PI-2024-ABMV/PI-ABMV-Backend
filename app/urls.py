@@ -9,7 +9,17 @@ from drf_spectacular.views import (
 from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from core.views import UserViewSet, CategoriaViewSet, TipoAssentoViewSet, FilmeViewSet, SalaViewSet, AssentoViewSet, SessaoViewSet, IngressoViewSet
+from core.views import (
+    AssentoViewSet,
+    CarrinhoViewSet,
+    CategoriaViewSet,
+    FilmeViewSet,
+    IngressoViewSet,
+    SalaViewSet,
+    SessaoViewSet,
+    TipoAssentoViewSet,
+    UserViewSet,
+)
 
 router = DefaultRouter()
 
