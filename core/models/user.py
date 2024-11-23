@@ -9,6 +9,7 @@ from django.contrib.auth.models import (
 )
 from django.db import models
 
+from .carrinho import Carrinho
 
 class UserManager(BaseUserManager):
     """Manager for users."""
@@ -44,10 +45,11 @@ class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
+    carrinho = models.ForeignKey(Carrinho, on_delete=models.CASCADE, null=True)
 
     objects = UserManager()
 
-    USERNAME_FIELD = "email"
+    USERNAME_FIELD = "email"    
     REQUIRED_FIELDS = []
 
     class Meta:
