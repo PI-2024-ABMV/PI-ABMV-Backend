@@ -11,6 +11,7 @@ from django.db import models
 
 from .carrinho import Carrinho
 
+
 class UserManager(BaseUserManager):
     """Manager for users."""
 

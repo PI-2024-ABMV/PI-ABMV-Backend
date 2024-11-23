@@ -2,6 +2,7 @@ from django.db import models
 
 from .categoria import Categoria
 
+
 class Filme(models.Model):
     nome = models.CharField(max_length=255)
     duracao = models.IntegerField()
