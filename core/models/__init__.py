@@ -6,3 +6,4 @@ from .sala import Sala
 from .assento import Assento
 from .sessao import Sessao
 from .ingresso import Ingresso
+from .carrinho import Carrinho
