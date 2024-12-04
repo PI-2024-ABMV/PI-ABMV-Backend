@@ -6,3 +6,4 @@ from .sala import SalaSerializer
 from .assento import AssentoSerializer
 from .sessao import SessaoSerializer
 from .ingresso import IngressoSerializer
+from .carrinho import CarrinhoSerializer

@@ -6,3 +6,4 @@ from .sala import SalaViewSet
 from .assento import AssentoViewSet
 from .sessao import SessaoViewSet
 from .ingresso import IngressoViewSet
+from .carrinho import CarrinhoViewSet

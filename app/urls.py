@@ -9,7 +9,17 @@ from drf_spectacular.views import (
 from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from core.views import UserViewSet, CategoriaViewSet, TipoAssentoViewSet, FilmeViewSet, SalaViewSet, AssentoViewSet, SessaoViewSet, IngressoViewSet
+from core.views import (
+    AssentoViewSet,
+    CarrinhoViewSet,
+    CategoriaViewSet,
+    FilmeViewSet,
+    IngressoViewSet,
+    SalaViewSet,
+    SessaoViewSet,
+    TipoAssentoViewSet,
+    UserViewSet,
+)
 
 router = DefaultRouter()
 
@@ -21,6 +31,7 @@ router.register(r"salas", SalaViewSet, basename="salas")
 router.register(r"assentos", AssentoViewSet, basename="Assentos")
 router.register(r"sessoes", SessaoViewSet, basename="sessoes")
 router.register(r"ingressos", IngressoViewSet, basename="ingressos")
+router.register(r"carrinhos", CarrinhoViewSet, basename="carrinhos")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
