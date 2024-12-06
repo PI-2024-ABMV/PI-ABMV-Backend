@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
+
 
 from .filme import Filme
 from .sala import Sala

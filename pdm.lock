@@ -5,7 +5,7 @@
 groups = ["default", "dev", "format"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:4ea6d4b3a3425c1f53308bbd4a6ca6782fc6c9c1be6b8e0c838ab2bdae73aa9a"
+content_hash = "sha256:1f3d5774d3c1de1a65354db2718a1de13f5e9079f86d051d0c032640a20913ed"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -1192,6 +1192,18 @@ files = [
 ]
 
 [[package]]
+name = "simplejwt"
+version = "2.0.1"
+summary = "A dead simple JWT library"
+groups = ["default"]
+dependencies = [
+    "typing",
+]
+files = [
+    {file = "simplejwt-2.0.1.tar.gz", hash = "sha256:3d9054c3f6c8ebca49693568b483f4bafcfdf962fe9e60f5bf0855bdc19761a2"},
+]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
@@ -1234,6 +1246,16 @@ groups = ["dev"]
 files = [
     {file = "tomlkit-0.12.5-py3-none-any.whl", hash = "sha256:af914f5a9c59ed9d0762c7b64d3b5d5df007448eb9cd2edc8a46b1eafead172f"},
     {file = "tomlkit-0.12.5.tar.gz", hash = "sha256:eef34fba39834d4d6b73c9ba7f3e4d1c417a4e56f89a7e96e090dd0d24b8fb3c"},
+]
+
+[[package]]
+name = "typing"
+version = "3.7.4.3"
+requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+summary = "Type Hints for Python"
+groups = ["default"]
+files = [
+    {file = "typing-3.7.4.3.tar.gz", hash = "sha256:1187fb9c82fd670d10aa07bbb6cfcfe4bdda42d6fab8d5134f04e8c4d0b71cc9"},
 ]
 
 [[package]]
